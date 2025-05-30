@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Voo Grátis no Aviator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow-x: hidden;
+            background: black;
+        }
+        header {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding-top: 20%;
+        }
+        .content h1 {
+            font-size: 3em;
+            color: #FFD700;
+            text-shadow: 2px 2px 10px red;
+        }
+        .cta {
+            margin-top: 20px;
+        }
+        .cta a {
+            background-color: #ff0000;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 0 15px #ff0000;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #1e1e1e;
+        }
+        .section img {
+            max-width: 90%;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <video autoplay muted loop>
+            <source src="aviator_background.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+        <div class="content">
+            <h1>Ganhe um Voo Grátis Todos os Dias!</h1>
+            <div class="cta">
+                <a href="https://SEULINKAFILIADO.com" target="_blank">Começar Agora</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="section">
+        <h2>Promoção Ativa: Primeiro Voo Grátis!</h2>
+        <img src="promo_voo_gratis.jpg" alt="Voo Grátis Todos os Dias">
+    </div>
+
+    <div class="section">
+        <h2>Veja Quem Já Ganhou no Aviator</h2>
+        <img src="vencedores_jackpot.jpg" alt="Vencedores do Aviator">
+    </div>
+
+    <footer>
+        18+ | Jogue com responsabilidade. Esta página não realiza apostas, apenas direciona ao site oficial. Termos e condições aplicáveis.
+    </footer>
+</body>
+</html>
